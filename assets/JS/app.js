@@ -13,13 +13,26 @@ const bloque_nav = document.querySelector('.bloque1-nav')
 boton.addEventListener('click',  ()=>{
 
         bloque_nav.classList.add('mostrar') 
-           
+
         //Lo añadimos al bloque de menú:
         bloque_nav.appendChild(cerrarBtn);
     })
 
     
 if(cerrarBtn){
+    //Traemos todos los enlaces del menu modal: 
+    const enlaces = document.querySelectorAll('.nav-item');
+    
+    enlaces.forEach( (enlace)=>{
+        enlace.addEventListener('click', () => {
+            bloque_nav.classList.add('oculto')
+            setTimeout(() => {
+                bloque_nav.classList.remove('mostrar')
+                bloque_nav.classList.remove('oculto')
+            }, 750);
+        })
+    })
+
     cerrarBtn.addEventListener('click', ()=> {
         bloque_nav.classList.add('oculto')
         setTimeout(() => {
