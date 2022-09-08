@@ -295,6 +295,23 @@ ul {
     position: relative; 
 }
 
+.gallery-title{
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+@media(min-width: 768px){
+    .gallery-title{
+        font-size: initial;
+    }
+}
+
+
+.gallery-image{
+    margin: 3rem auto;
+}
+
 .expertise{
     margin-bottom: 12rem;
 }
@@ -333,12 +350,6 @@ ul {
     font-weight: 700;
     color: white;
 }
-
-.gallery-image{
-    margin: 3rem auto;
-    /*border-radius: 3rem;*/
-}
-
 
 .contact-ways{
     display: flex;
