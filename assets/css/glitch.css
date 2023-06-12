@@ -12,7 +12,7 @@
   }
   
   .hero {
-    font-size: clamp(40px, 10vw, 100px);
+    font-size: 45px;
     line-height: 1;
     display: inline-block;
     color: #fff;
