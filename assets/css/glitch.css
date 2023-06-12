@@ -485,8 +485,15 @@
   
   .hero-container {
     position: relative;
-    padding: 200px 0;
+    padding: 2rem 0;
     text-align: center;
+  }
+
+  @media(min-width: 768px){
+
+    .hero-container{
+        padding: 5rem 0;
+    }
   }
   
   .environment {
